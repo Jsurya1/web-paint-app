@@ -46,12 +46,4 @@
 
     }
 
-    localStorage.setItem(canvasName, canvas.toDataURL());
-
-
-    var dataURL = localStorage.getItem(canvasName);
-    var img = new Image;
-    img.src = dataURL;
-    img.onload = function () {
-        ctx.drawImage(img, 0, 0);
-    };
+ 
